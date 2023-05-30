@@ -37,14 +37,14 @@
             // 
             // textBoxDESCRICAO
             // 
-            this.textBoxDESCRICAO.Location = new System.Drawing.Point(90, 137);
+            this.textBoxDESCRICAO.Location = new System.Drawing.Point(67, 103);
             this.textBoxDESCRICAO.Name = "textBoxDESCRICAO";
             this.textBoxDESCRICAO.Size = new System.Drawing.Size(155, 20);
             this.textBoxDESCRICAO.TabIndex = 0;
             // 
             // textBoxPRECO
             // 
-            this.textBoxPRECO.Location = new System.Drawing.Point(90, 223);
+            this.textBoxPRECO.Location = new System.Drawing.Point(67, 189);
             this.textBoxPRECO.Name = "textBoxPRECO";
             this.textBoxPRECO.Size = new System.Drawing.Size(155, 20);
             this.textBoxPRECO.TabIndex = 1;
@@ -52,7 +52,7 @@
             // labelDESCRICAO
             // 
             this.labelDESCRICAO.AutoSize = true;
-            this.labelDESCRICAO.Location = new System.Drawing.Point(90, 94);
+            this.labelDESCRICAO.Location = new System.Drawing.Point(67, 60);
             this.labelDESCRICAO.Name = "labelDESCRICAO";
             this.labelDESCRICAO.Size = new System.Drawing.Size(110, 13);
             this.labelDESCRICAO.TabIndex = 2;
@@ -61,7 +61,7 @@
             // Preço
             // 
             this.Preço.AutoSize = true;
-            this.Preço.Location = new System.Drawing.Point(90, 195);
+            this.Preço.Location = new System.Drawing.Point(67, 161);
             this.Preço.Name = "Preço";
             this.Preço.Size = new System.Drawing.Size(35, 13);
             this.Preço.TabIndex = 3;
@@ -69,7 +69,7 @@
             // 
             // buttonCADASTRAR
             // 
-            this.buttonCADASTRAR.Location = new System.Drawing.Point(125, 275);
+            this.buttonCADASTRAR.Location = new System.Drawing.Point(102, 241);
             this.buttonCADASTRAR.Name = "buttonCADASTRAR";
             this.buttonCADASTRAR.Size = new System.Drawing.Size(75, 23);
             this.buttonCADASTRAR.TabIndex = 4;
