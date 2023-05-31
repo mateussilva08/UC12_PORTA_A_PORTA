@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace UC12_PORTA_A_PORTA
 {
@@ -15,32 +16,23 @@ namespace UC12_PORTA_A_PORTA
         public FormCADASTROCLIENTE()
         {
             InitializeComponent();
-        }
+             
+    }
 
         private void CADASTRAR_Click(object sender, EventArgs e)
         {
 
             try
-            {
-                if (textBoxTELEFONE.Text != "" )
-                {
-
-
+            {              
                     ClassMYSQL.conexao.Open();
                     ClassMYSQL.comando.CommandText = "INSERT INTO tbl_cliente (nome, cpf, telefone, endereco) VALUES ('" + textBoxNOME.Text + "', '" + textBoxCPF.Text + "', '" + textBoxTELEFONE.Text + "', '" + textBoxENDERECO.Text + "');";
-                                 
-                }
-                else
-                {
-                    MessageBox.Show(" ");
-                }
+                    ClassMYSQL.comando.ExecuteNonQuery();
+                MessageBox.Show("Cadastrado com sucesso");                                             
             }
-
-
             catch (Exception erro)
             {
                 MessageBox.Show(erro.Message);
-                //MessageBox.Show("Campos em branco");
+                MessageBox.Show(erro.Message);
             }
             finally
             {

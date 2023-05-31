@@ -54,7 +54,7 @@ namespace UC12_PORTA_A_PORTA
                 }
                 else
                 {
-                    MessageBox.Show(" ");
+                    MessageBox.Show("Campos em branco");
                 }
             }
 

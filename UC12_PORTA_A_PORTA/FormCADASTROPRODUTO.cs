@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace UC12_PORTA_A_PORTA
 {
@@ -27,6 +28,7 @@ namespace UC12_PORTA_A_PORTA
 
                     ClassMYSQL.conexao.Open();
                     ClassMYSQL.comando.CommandText = "INSERT INTO tbl_produto (descricao, preco) VALUES ('" + textBoxDESCRICAO.Text + "', '" + textBoxPRECO.Text + "');";
+                    ClassMYSQL.comando.ExecuteNonQuery();
 
                 }
                 else

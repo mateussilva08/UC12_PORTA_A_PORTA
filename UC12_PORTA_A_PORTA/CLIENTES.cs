@@ -24,18 +24,21 @@ namespace UC12_PORTA_A_PORTA
             try
             {
                 ClassMYSQL.conexao.Open();
-
+                ClassMYSQL.comando.CommandText = "SELECT * FROM tbl_cliente;";
+                ClassMYSQL.comando.ExecuteNonQuery();
+               // textBoxNOME.Text = dataGridViewPESQUISA.CurrentRow.Cells[1].Value.ToString();
 
             }
             catch (Exception erro)
             {
-
+                MessageBox.Show(erro.Message);
+                //MessageBox.Show("Erro ao atualizar o contato!");
             }
             finally
             {
                 ClassMYSQL.conexao.Close();
             }
-           
+
         }
     }
 }

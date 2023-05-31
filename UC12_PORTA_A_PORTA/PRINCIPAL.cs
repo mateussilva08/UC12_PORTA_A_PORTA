@@ -37,5 +37,10 @@ namespace UC12_PORTA_A_PORTA
             telaCADASTRO.Show();
             telaCADASTRO.WindowState = FormWindowState.Maximized;
         }
+
+        private void PRINCIPAL_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
