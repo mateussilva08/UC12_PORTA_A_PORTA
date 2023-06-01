@@ -11,33 +11,32 @@ using MySql.Data.MySqlClient;
 
 namespace UC12_PORTA_A_PORTA
 {
-    public partial class CLIENTES : Form
+    public partial class FormPRODUTOS : Form
     {
         public static string servidor = "Server=localhost;Database=bd_porta_a_porta;Uid=root;Pwd=";
         public static MySqlConnection conexao = new MySqlConnection(servidor);
         public static MySqlCommand comando = conexao.CreateCommand();
 
-        public CLIENTES()
+        public FormPRODUTOS()
         {
             InitializeComponent();
-            mostrarclientes();
-
+            mostrarproduto();
         }
-        private void mostrarclientes()
-        {
 
+        private void mostrarproduto()
+        {
             try
             {
                 conexao.Open();
-                comando.CommandText = "SELECT * FROM tbl_cliente;";
+                comando.CommandText = "SELECT * FROM tbl_produto;";
                 comando.ExecuteNonQuery();
 
-                MySqlDataAdapter adaptadorCLIENTES = new MySqlDataAdapter(comando);
+                MySqlDataAdapter adaptadorPRODUTO = new MySqlDataAdapter(comando);
 
-                DataTable tabelaCLIENTES = new DataTable();
-                adaptadorCLIENTES.Fill(tabelaCLIENTES);
+                DataTable tabelaPRODUTO = new DataTable();
+                adaptadorPRODUTO.Fill(tabelaPRODUTO);
 
-                dataGridView1.DataSource = tabelaCLIENTES;
+                dataGridView1.DataSource = tabelaPRODUTO;
                 // textBoxNOME.Text = dataGridViewPESQUISA.CurrentRow.Cells[1].Value.ToString();
 
             }
@@ -52,15 +51,16 @@ namespace UC12_PORTA_A_PORTA
             }
         }
 
-        private void dataGridView1_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            
+
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_Click(object sender, EventArgs e)
         {
 
         }
     }
 }
+

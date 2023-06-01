@@ -16,7 +16,7 @@ namespace UC12_PORTA_A_PORTA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Application.Run(new PRINCIPAL());
         }
     }
 }

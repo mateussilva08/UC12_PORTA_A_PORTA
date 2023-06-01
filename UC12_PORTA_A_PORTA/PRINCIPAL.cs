@@ -25,7 +25,7 @@ namespace UC12_PORTA_A_PORTA
 
            // telaCADASTRO.MdiParent = this;
             telaCADASTRO.Show();
-            telaCADASTRO.WindowState = FormWindowState.Maximized;
+          //  telaCADASTRO.WindowState = FormWindowState.Maximized;
 
         }
 
@@ -35,12 +35,30 @@ namespace UC12_PORTA_A_PORTA
 
             // telaCADASTRO.MdiParent = this;
             telaCADASTRO.Show();
-            telaCADASTRO.WindowState = FormWindowState.Maximized;
+          //  telaCADASTRO.WindowState = FormWindowState.Maximized;
         }
 
         private void PRINCIPAL_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form telaCLIENTES = new CLIENTES();
+
+            // telaCADASTRO.MdiParent = this;
+            telaCLIENTES.Show();
+          //  telaCLIENTES.WindowState = FormWindowState.Maximized;
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form telaPRODUTOS = new FormPRODUTOS();
+
+            // telaCADASTRO.MdiParent = this;
+            telaPRODUTOS.Show();
+           // telaPRODUTOS.WindowState = FormWindowState.Maximized;
         }
     }
 }

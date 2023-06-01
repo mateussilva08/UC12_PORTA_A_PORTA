@@ -106,6 +106,12 @@
     <Compile Include="FormCADASTROPRODUTO.Designer.cs">
       <DependentUpon>FormCADASTROPRODUTO.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPRODUTOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPRODUTOS.Designer.cs">
+      <DependentUpon>FormPRODUTOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="PRINCIPAL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCADASTROUSUARIO.resx">
       <DependentUpon>FormCADASTROUSUARIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPRODUTOS.resx">
+      <DependentUpon>FormPRODUTOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PRINCIPAL.resx">
       <DependentUpon>PRINCIPAL.cs</DependentUpon>
